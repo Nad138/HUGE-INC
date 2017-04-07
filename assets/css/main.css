@@ -8,7 +8,7 @@ nav{
   margin-top: 0;
   position: fixed;
   padding-top: 0px;
-  background: none;
+  background-color: black;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 .logo, .menu{
@@ -24,38 +24,41 @@ nav{
   text-align: left;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(../img/logo.jpg);
-  background-size: contain;
+  background-image: url(../img/laboratoria.svg);
 }
 .menu{
-  top: 0;
-  right: 0;
+  top:0;
+  right:0;
   height: 4px;
   width: 24px;
-  text-align: right;
+  text-align:right;
   margin: 2rem 2rem;
-  background: #ec008c;
+  background: #F9A91A;
   transition: all 0.3s;
 }
-.menu::after{
-  top: 1px;;
-  right: 0;
-  height: 4px;
-  width: 24px;
-  text-align: right;
-  margin: 2rem 2rem;
-  background: #ec008c;
-  transition: all 0.3s;
-  content: "";
+.menu::before{ /*antes de, sube -8px*/
+  top: -8px;
 }
-.menu::before{
-  top: -1px;
-  right: 0;
+.menu::after{ /*despues de, baja 8px*/
+  top: 8px;
+  }
+
+.menu::before, .menu::after{
+  content: "";
   height: 4px;
   width: 24px;
-  text-align: right;
-  margin: 2rem 2rem;
-  background: #ec008c;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  background: #F9A91A;
   transition: all 0.3s;
-  content: "";
+}
+#toggle:hover .menu:before {
+  top: -9px;
+}
+#toggle:hover .menu:after {
+  top: 9px;
+}
+#toggle:hover {
+  transition: top 0.4s;
 }
