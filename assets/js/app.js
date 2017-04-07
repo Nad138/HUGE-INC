@@ -22,3 +22,18 @@ window.addEventListener("scroll", function(){
    }
    lastScrollTop = currentScroll;
 }, false);
+
+
+function addImages(){
+var coders = document.getElementById("grid");
+var foto = document.createElement("figure");
+var nombreBox = document.createElement("figcaption");
+var nombre = document.createElement("span");
+var coder = document.createElement("img");
+var imagen = new Array("..//assets/img/students");
+console.log(imagen);
+for(var i=0;i<imagen.length;i++){
+  coders.appendChild(foto);
+  foto.appendChild(nombreBox);
+  foto.appendChild(nombre);
+  }

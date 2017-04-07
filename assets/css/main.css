@@ -146,3 +146,7 @@ nav.open ul li {
   font-size: 60px;
   visibility: visible !important;
 }
+img{
+  height: 250px;
+  width: 250px;
+}
