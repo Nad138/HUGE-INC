@@ -150,10 +150,12 @@ img{
   height: 250px;
   width: 250px;
   display:inline-block;
+  margin: 5px;
+  border-radius: 3px;
 }
 li{
   display: inline-block;
 }
 section{
-  margin: inherit;
+  margin-top: 50px;;
 }
