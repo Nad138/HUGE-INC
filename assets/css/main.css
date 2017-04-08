@@ -152,13 +152,20 @@ img{
   display:inline-block;
   margin: 5px;
   border-radius: 3px;
-  transform:scale(1);
+
 }
 li{
   display: inline-block;
   }
+div{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
 div img{
   display: inline-block;
+  transform:scale(1);
   transition: all 500ms ease-in-out;
 }
 
@@ -168,5 +175,5 @@ div img{
   overflow: hidden;
   }
   div:hover img{
-   transform:scale(1.25);
+   transform:scale(1.2);
   }
