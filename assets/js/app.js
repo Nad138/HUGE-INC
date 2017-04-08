@@ -29,14 +29,15 @@ function addImages(){
 var result="";
 for(var i=1;i<55;i++){
   var li = document.createElement("li");
+  var div = document.createElement("div");
   var coder = document.createElement("img");
   var nombre = document.createElement("span");
+  div.classList.add("hover");
   coder.setAttribute("src","assets/img/students/"+i+".png");
-  li.appendChild(nombre);
-  li.appendChild(coder);
-
-    console.log(li );
-    tablero.appendChild(li);
+  li.appendChild(div);
+  div.appendChild(nombre);
+  div.appendChild(coder);
+  tablero.appendChild(li);
   }
   result;
 }
