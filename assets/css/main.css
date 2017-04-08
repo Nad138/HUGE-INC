@@ -177,3 +177,7 @@ div img{
   div:hover img{
    transform:scale(1.2);
   }
+  div:hover{
+    background: teal;
+    opacity: 0.8s;
+  }
