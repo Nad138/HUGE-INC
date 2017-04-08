@@ -149,4 +149,11 @@ nav.open ul li {
 img{
   height: 250px;
   width: 250px;
+  display:inline-block;
+}
+li{
+  display: inline-block;
+}
+section{
+  margin: inherit;
 }

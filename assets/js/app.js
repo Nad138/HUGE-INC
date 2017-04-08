@@ -23,30 +23,24 @@ window.addEventListener("scroll", function(){
    lastScrollTop = currentScroll;
 }, false);
 
-
-
 function addImages(){
-var tablero = document.getElementById("tablero");
-var ul = document.createElement("ul");
-var li = document.createElement("li");
-var div = document.createElement("div");
-var figure = document.createElement("figure");
-var coder = document.createElement("img");
-var nombreBox = document.createElement("figcaption");
-var nombre = document.createElement("span");
 
-tablero.appendChild(ul);
-ul.appendChild(li);
-li.appendChild(div);
-div.appendChild(figure);
+  var tablero = document.getElementById("tablero");
+var result="";
 for(var i=1;i<55;i++){
-coder.setAttribute("src","assets/img/students/"+i+".png");
+  var li = document.createElement("li");
+  var coder = document.createElement("img");
+  var nombre = document.createElement("span");
+  coder.setAttribute("src","assets/img/students/"+i+".png");
+  li.appendChild(nombre);
+  li.appendChild(coder);
 
-figure.appendChild(coder);
-figure.appendChild(nombreBox);
-nombreBox.appendChild(nombre);
-
+    console.log(li );
+    tablero.appendChild(li);
   }
+  result;
 }
 
 addImages();
+
+/*tablero(ul(li(coder,nombre)*54 veces))*/
